@@ -1,0 +1,176 @@
+body{
+    margin:0;
+    font-family: 'EB Garamond', serif;
+}
+
+/*  Menu  */
+nav{
+    
+    margin:0 auto;
+    background-color: #f8f1e8;
+    color:white;
+    height:120px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right:20px;
+}
+
+nav li {
+        list-style-type: none;
+        font-family: 'Playball', cursive;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    display: inline-block;
+    margin-top: 10px;
+    width :90px ;
+    
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    height: 90px;
+}
+.menu li {
+    line-height: 90px;
+}
+nav a {
+    text-decoration: none;
+    color :#6b6259;
+    font-weight: bold;
+    font-size: 30px;
+    height: 100%;
+}
+nav a:hover{
+    text-shadow: 1px 1px 1px grey;
+}
+
+nav a h2{
+    color: orange;
+    font-family: 'Playfair Display', serif;
+
+}
+
+/*  Home */
+
+.home-img{
+    width:100%;
+    overflow: hidden;
+    margin:0;
+}
+.home-img img{
+    display:block;
+    width:100%;
+}
+
+/*  Notre histoire  */
+
+.histoire{
+    margin-top: 30px;
+    display: flex;
+   padding: 20px;
+    text-align: center;
+}
+.histoire p{
+    font-size: 1.5EM;
+}
+.texte-histoire{
+    width:50%;
+
+}
+.texte-histoire h2{
+    font-family: 'Playball', cursive;
+    font-size: 2EM;
+}
+.img-histoire{
+    width: 50%;
+    margin-top: 25px;
+}
+.histoire img{
+    border-radius: 30%;
+}
+
+/*  Footer */
+
+footer{
+    background-color: #f8f1e8;
+    height:80px;
+    display: flex;
+}
+.mentions{
+    line-height: 52px;
+}
+.mentions a{
+    text-decoration: none;
+    color :#6b6259;
+}
+footer div{
+    width:50%;
+    text-align: center;
+}
+.reseaux img{
+    margin-top: 15px;
+}
+/*  Responsive */
+
+@media screen and (max-width: 640px){
+
+    nav{
+        height:auto;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    .menu{
+        width: 100%;
+    }
+    .logo{
+        justify-content: space-around;
+    }
+    nav a h2{
+        font-size: 80px;
+    }
+    .logo img{
+        width: 200px;
+    }
+    .home-img img{
+        width:800px;
+    }
+    .histoire{
+        flex-direction: column;
+    }
+    .texte-histoire{
+        width: 100%;
+    }
+    .img-histoire{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        height:100%;
+    }
+    footer div{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .histoire{
+        flex-direction: column;
+    }
+.texte-histoire{
+        width: 100%;
+    }
+    .img-histoire{
+        width: 100%;
+    }
+
+}
+

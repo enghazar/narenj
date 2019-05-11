@@ -5,7 +5,7 @@
             <li><a  href="index.php"><h2>Närenj</h2></a></li>
         </div>
         <div class="menu">
-            <li><a  href="histoire.php">Notre histoire</a></li>
+            <li><a  href="histoire.php">Notre actualité</a></li>
             <li><a  href="#">Notre carte</a></li>
             <li><a  href="contact.php">Réserver</a></li>
         </div>

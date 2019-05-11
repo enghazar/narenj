@@ -74,8 +74,9 @@ nav a h2{
 .histoire{
     margin-top: 30px;
     display: flex;
-   padding: 20px;
+    padding: 20px;
     text-align: center;
+    margin-bottom: 100px;
 }
 .histoire p{
     font-size: 1.5EM;
@@ -102,6 +103,10 @@ footer{
     background-color: #f8f1e8;
     height:80px;
     display: flex;
+    position: fixed;
+    
+    bottom: 0;
+    width: 100%;
 }
 .mentions{
     line-height: 52px;
@@ -116,6 +121,21 @@ footer div{
 }
 .reseaux img{
     margin-top: 15px;
+}
+
+/* Pages */
+
+article h2 {
+    border-bottom: 2px solid orange;
+}
+
+article {
+    width: 70%;
+    margin: 0 auto;
+}
+address a {
+    
+    color :#6b6259;
 }
 /*  Responsive */
 

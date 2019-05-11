@@ -51,7 +51,7 @@ nav a:hover{
     text-shadow: 1px 1px 1px grey;
 }
 
-nav a h2{
+nav a h1{
     color: orange;
     font-family: 'Playfair Display', serif;
 
@@ -134,63 +134,32 @@ article {
     margin: 0 auto;
 }
 address a {
-    
+
     color :#6b6259;
 }
-/*  Responsive */
 
-@media screen and (max-width: 640px){
-
-    nav{
-        height:auto;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    .menu{
-        width: 100%;
-    }
-    .logo{
-        justify-content: space-around;
-    }
-    nav a h2{
-        font-size: 80px;
-    }
-    .logo img{
-        width: 200px;
-    }
-    .home-img img{
-        width:800px;
-    }
-    .histoire{
-        flex-direction: column;
-    }
-    .texte-histoire{
-        width: 100%;
-    }
-    .img-histoire{
-        width: 100%;
-    }
-    footer{
-        flex-direction: column;
-        height:100%;
-    }
-    footer div{
-        width: 100%;
-    }
-
+.menu_chef{
+    margin-bottom: 20px;
 }
 
-@media screen and (max-width: 900px){
-    .histoire{
-        flex-direction: column;
-    }
-.texte-histoire{
-        width: 100%;
-    }
-    .img-histoire{
-        width: 100%;
-    }
+table {
+    width:100%;
+    border-bottom:  1px dotted orange;
+}
+.intitule {
+    width:70%;
+}
+
+/* carousel */
+
+.carousel{
+    width:70%;
+    overflow:hidden; 
+    margin:0 auto 50px auto;  
+}
+.mySlides{
+    
+    margin:-21.875% 0;
 
 }
 

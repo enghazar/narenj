@@ -162,4 +162,37 @@ table {
     margin:-21.875% 0;
 
 }
+ /* contact */
+ .contact h1{
+    
+    font-family: 'Playfair Display', serif;
+    border-bottom: 2px solid orange;
+
+ }
+ .contact a{
+    color :#6b6259;
+ }
+form[name="formulaire"] {
+  text-align:left ;
+}
+
+form[name="formulaire"] label {
+    display: block;
+    width: 40%;
+    float:left ;
+}
+input[type=submit],input[type=reset],.liens{
+  
+  background-color:white ;
+  margin:30px;
+  font-size:1.1em;
+  border : 3px solid orange ;
+  border-radius : 5px ;
+  padding:3px ;  
+}
+
+ #map {
+       height:350px; width:100%;
+       margin-bottom: 100px;
+      }
 

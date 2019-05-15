@@ -40,3 +40,7 @@ nav{
     footer div{
         width: 100%;
     }
+  .mySlides{
+    width:100%;
+    margin:auto 0;
+  }

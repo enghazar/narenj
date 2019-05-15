@@ -17,79 +17,78 @@
         <div class="menu_chef">
             <h3>Entrées</h3>
                 <table>
-                    <tr>
+                    
                         <?php
                             include "conn_bdd.php" ;
                             $reponse = $bdd->query('SELECT description,prix FROM menu WHERE type="entree"');
 
                             while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
                         { ?>
-
+                        <tr>
                             <td class="intitule">
                                 <?php echo nl2br($donnees['description']);?>
                             </td>
                             <td>
                                 <?php echo ($donnees['prix']);?>€
                             </td>
-                             
+                       </tr>      
                         <?php
                             }
                             $reponse->closecursor();
                              
                         ?>
-                    </tr>
+                    
 
                 </table>
             
             <h3>Plats</h3>
             <table>
-                    <tr>
-                        <?php
-                            include "conn_bdd.php" ;
-                            $reponse = $bdd->query('SELECT description,prix FROM menu WHERE type="plat"');
+                <?php
+                     include "conn_bdd.php" ;
+                    $reponse = $bdd->query('SELECT description,prix FROM menu WHERE type="plat"');
 
-                            while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
-                        { ?>
+                    while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
+                { ?>
+                <tr>
+                    <td class="intitule">
+                        <?php echo nl2br($donnees['description']);?>
+                    </td>
+                    <td>
+                        <?php echo ($donnees['prix']);?>€
+                    </td>
+                </tr>
+                    <?php
+                        }
+                        $reponse->closecursor();
+                         
+                    ?>
+                </tr>
 
-                            <td class="intitule">
-                                <?php echo nl2br($donnees['description']);?>
-                            </td>
-                            <td>
-                                <?php echo ($donnees['prix']);?>€
-                            </td>
-                             
-                        <?php
-                            }
-                            $reponse->closecursor();
-                             
-                        ?>
-                    </tr>
-
-                </table>
+            </table>
             
             <h3>Desserts</h3>
             <table>
-                    <tr>
-                        <?php
-                            include "conn_bdd.php" ;
-                            $reponse = $bdd->query('SELECT description,prix FROM menu WHERE type="dessert"');
+                    
+                <?php
+                    include "conn_bdd.php" ;
+                    $reponse = $bdd->query('SELECT description,prix FROM menu WHERE type="dessert"');
 
-                            while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
-                        { ?>
-
-                            <td class="intitule">
-                                <?php echo nl2br($donnees['description']);?>
-                            </td>
-                            <td>
-                                <?php echo ($donnees['prix']);?>€
-                            </td>
-                             
-                        <?php
-                            }
-                            $reponse->closecursor();
-                             
-                        ?>
-                    </tr>
+                    while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
+                { ?>
+                <tr>
+                    <td class="intitule">
+                        <?php echo nl2br($donnees['description']);?>
+                    </td>
+                    <td>
+                        <?php echo ($donnees['prix']);?>€
+                    </td>
+                </tr>   
+                <?php
+                    }
+                    $reponse->closecursor();
+                     
+                ?>
+            
 
                 </table>
             

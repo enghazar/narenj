@@ -1,0 +1,9 @@
+User-agent: *
+#bloque les fichiers suivant
+Disallow: /css/
+Disallow: /bdd/
+Disallow: /admin/
+Disallow: /js/
+Disallow: /img/
+
+Sitemap: www.restaurant-narenj.com/sitemap.xml

@@ -1,0 +1,52 @@
+.modif{
+  display:flex;
+}
+.articlemodif:first-child{
+  width:50%;
+  background-color:white ;
+  border : 2px solid orange ;
+  text-align:left ;
+}
+.articlemodif:not(:first-child){
+  flex:1;
+   background-color:white ;
+  border : 2px solid orange ;
+}
+input[type=submit],input[type=reset],.liens{
+  
+  background-color:white ;
+  margin:30px;
+  border : 3px solid orange ;
+  border-radius : 5px ;
+  padding:3px ;  
+  color: inherit;
+
+}
+
+.modif a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+
+}
+
+.deconnexion{
+  background-color:white ;
+  margin:30px;
+  border : 3px solid orange ;
+  border-radius : 5px ;
+  padding:3px ;  
+  color: inherit;
+}
+
+.presentation {
+  text-align:left ;
+  max-width : 800px ;
+  margin:auto ;
+  margin-bottom:10px;
+  line-height: 1.8;
+  font-size: 1.5em ;
+  
+  border-radius:20px;
+  padding:30px;
+}

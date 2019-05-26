@@ -6,7 +6,7 @@
         </div>
         <div class="menu">
             <li><a  href="notre_carte.php">Notre carte</a></li>
-            <li><a  href="histoire.php">Notre actualité</a></li>
+            <li><a  href="actualite.php">Notre actualité</a></li>
             <li><a  href="contact.php">Réserver</a></li>
         </div>
 

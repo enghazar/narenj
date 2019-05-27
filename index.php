@@ -5,6 +5,16 @@
 		<title>Närenj</title>
 		<meta name="Description" content="Le Närenj (orange amère en syrien) est un restaurant bistronomique syrien situé à Orléans">
 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140900205-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-140900205-1');
+		</script>
+
 	</head>
 
 	<body>

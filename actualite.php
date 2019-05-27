@@ -11,7 +11,7 @@
                     
             <?php
                 include "conn_bdd.php" ;
-                $reponse = $bdd->query('SELECT titre,article, modified FROM actu ORDER BY modified DESC');
+                $reponse = $bdd->query('SELECT titre,article, modified,img FROM actu ORDER BY modified DESC');
 
                 while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
             { ?>
@@ -19,6 +19,15 @@
 
                 <h2><?php echo ($donnees['titre']); ?></h2>
                 <p><?php echo ($donnees['article']); ?></p>
+
+                <?php if(isset ($donnees['img']) && ($donnees['img']!="")){ ?>
+
+                    <img class ="img_actu" src="img/<?= $donnees['img'];?>">
+
+                <?php 
+                }
+
+                ?>
                 <p class="modified"><?php echo ($donnees['modified']); ?></p>
 
             </article>

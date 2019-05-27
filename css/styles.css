@@ -133,6 +133,7 @@ article {
     width: 70%;
     margin: 0 auto;
     font-size: 1.2EM;
+    margin-bottom: 120px;
 }
 address a {
 
@@ -154,6 +155,11 @@ table {
 .modified{
     font-style: italic;
     font-size: 15px;
+}
+
+.img_actu{
+    width: 80%;
+    margin-bottom: 120px;
 }
 
 /* carousel */

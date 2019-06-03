@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <?php include "link.php"; ?>
-            <title>Närenj</title>
+            <title>Actualité Närenj</title>
             <meta name="Description" content="Actualité du restaurant Närenj à Orléans">
 
     </head>

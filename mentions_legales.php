@@ -3,7 +3,7 @@
 <head>
      <?php include "link.php"; ?>
      
-     <title>Närenj- mentions légales</title>
+     <title>Mentions légales</title>
      <meta name="Description" content="Vous trouverez ici les mentions légales concernant le restaurant Närenj">
  </head>
 

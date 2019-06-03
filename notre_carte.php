@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <?php include "link.php"; ?>
-        <title>Närenj</title>
+        <title>Carte Närenj</title>
         <meta name="Description" content="Carte du restaurant Närenj à Orléans">
 
 </head>
@@ -94,10 +94,10 @@
             
         </div>
         <div class="carousel">
-            <img class="mySlides" src="img/img1.jpg">
-            <img class="mySlides" src="img/img2.jpg">
-            <img class="mySlides" src="img/img3.jpg">
-            <img class="mySlides" src="img/img4.jpg">
+            <img class="mySlides" src="img/img1.jpg" title="Langue de bœuf fondante, cuisson lente, légumes de la ferme d’Artaud." alt="Langue de bœuf fondante">
+            <img class="mySlides" src="img/img2.jpg" title="Houmous de pois chiche" alt="Houmous de pois chiche">
+            <img class="mySlides" src="img/img3.jpg" title="Canette aux trois cuissons ,signature du chef" alt="Canette aux trois cuissons">
+            <img class="mySlides" src="img/img4.jpg" title="Pintade" alt="Pintade">
         </div>
     </article>
     

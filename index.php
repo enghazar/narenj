@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 	<head>
-		<?php include "link.php"; ?>
+		<?php include "inc/link.php"; ?>
 		<title>Restaurant Närenj</title>
 		<meta name="Description" content="Le Närenj (orange amère en syrien) est un restaurant bistronomique syrien situé à Orléans">
 
@@ -19,7 +19,7 @@
 
 	<body>
 
-		<?php include "menu.php"; ?>
+		<?php include "inc/menu.php"; ?>
 		<div class="home-img">
 			<img src="img/plat2.jpg" alt="Restaurant Närenj" title="Restaurant Närenj">
 		</div>
@@ -36,7 +36,7 @@
 
 		</section>
 
-		<?php include "footer.php" ; ?>
+		<?php include "inc/footer.php" ; ?>
 </body>
 
 </html>

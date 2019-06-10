@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
-    <?php include "link.php"; ?>
+    <?php include "inc/link.php"; ?>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
    crossorigin=""/>
@@ -13,7 +13,7 @@
 
 </head>
 <body>
- <?php include "menu.php"; ?>
+ <?php include "inc/menu.php"; ?>
 
  <?php
 
@@ -143,9 +143,9 @@ if (($err_formulaire) || (!isset($_POST['send'])))
 	
 	?>
 
-    <article class="contact">
+    <section class="contact">
 
-        <h1>Contactez-nous pour faire une réservation</h1>
+        <h2>Contactez-nous pour faire une réservation</h2>
 
         <form method="POST" action="" name="formulaire">
             <label for "nom" >Nom et prénom</label>
@@ -171,18 +171,18 @@ if (($err_formulaire) || (!isset($_POST['send'])))
         <?php
     }
     ?>
-    <h1>Närenj</h1>
+    <h2>Närenj</h2>
     
     <p><span>Adresse :</span> 178 Rue de Bourgogne 45000 Orléans   </p>
     <p><span>E-Mail :</span><a  href="mailto:enghazar@gmail.com">enghazar@gmail.com</a> </p>
     <p><span>Portable :</span><a  href="tel:07 68 07 34 43 "> 07 68 07 34 43 </a></p>
 
     
-    </article>
+    </section>
 
-    <div id='map'>
+    <div id='map'></div>
     
-    <?php include "footer.php"; ?>
+    <?php include "inc/footer.php"; ?>
 
     <script type="text/javascript" src="js/map.js"></script>
 </body>

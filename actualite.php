@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <?php include "link.php"; ?>
+        <?php include "inc/link.php"; ?>
             <title>Actualité Närenj</title>
             <meta name="Description" content="Actualité du restaurant Närenj à Orléans">
 
     </head>
     <body>
-        <?php include "menu.php"; ?>
+        <?php include "inc/menu.php"; ?>
                     
             <?php
-                include "conn_bdd.php" ;
+                include "inc/conn_bdd.php" ;
                 $reponse = $bdd->query('SELECT titre,article, modified,img FROM actu ORDER BY modified DESC');
 
                 while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
@@ -38,7 +38,7 @@
 
         </div>
 
-        <?php include "footer.php"; ?>
+        <?php include "inc/footer.php"; ?>
 
 
     </body>

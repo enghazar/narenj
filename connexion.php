@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <?php include "link.php"; ?>
+        <?php include "inc/link.php"; ?>
         
         <title>Connexion au BackOffice</title>
 

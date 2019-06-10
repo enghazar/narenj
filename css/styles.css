@@ -10,17 +10,14 @@ nav{
     background-color: #f8f1e8;
     color:white;
     height:120px;
-
-}
-nav ul{
     display: flex;
-    justify-content: space-between;
-    margin-right:20px;
+    justify-content: space-around;
+   
 }
 
-nav li {
-        list-style-type: none;
-        font-family: 'Playball', cursive;
+.menu_elem{
+    list-style-type: none;
+    font-family: 'Playball', cursive;
 }
 .logo{
     display: flex;
@@ -36,6 +33,7 @@ nav li {
     justify-content: space-between;
     width:60%;
     height: 90px;
+    margin-right:20px;
 }
 .menu li {
     line-height: 90px;
@@ -85,10 +83,11 @@ nav a h1{
 }
 .histoire p{
     font-size: 1.5EM;
+    text-align: justify;
 }
 .texte-histoire{
     width:50%;
-
+    
 }
 .texte-histoire h2{
     font-family: 'Playball', cursive;
@@ -130,7 +129,7 @@ footer div{
 
 /* Pages */
 
-article h2 {
+section h2 , article h2{
     border-bottom: 2px solid orange;
 }
 
@@ -180,6 +179,13 @@ table {
 
 }
  /* contact */
+
+ .contact{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.2EM;
+    margin-bottom: 120px;
+ }
  .contact h1{
     
     font-family: 'Playfair Display', serif;
@@ -198,12 +204,20 @@ form[name="formulaire"] label {
     width: 40%;
     float:left ;
 }
-input[type=submit],input[type=reset]{
+input[type=submit]{
   
   background-color:white ;
   margin:30px;
   font-size:1.1em;
   border : 3px solid orange ;
+  border-radius : 5px ;
+  padding:3px ;  
+}
+input[type=reset]{
+  
+  background-color:white ;
+  margin:30px;
+  font-size:1.1em;
   border-radius : 5px ;
   padding:3px ;  
 }

@@ -1,50 +1,54 @@
 nav{
-        height:auto;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    .menu{
-        width: 100%;
-        flex-direction: column;
-        height:100%;
-    }
-    .menu li{
-        line-height: 40px;
-        border-bottom: solid 1px black;
-    }
-    .logo{
-        justify-content: space-around;
-    }
-    nav a h2{
-        font-size: 80px;
-    }
-    .logo img{
-        width: 200px;
-    }
-   
-    .histoire{
-        flex-direction: column;
-    }
-    .texte-histoire{
-        width: 100%;
-    }
-    .img-histoire{
-        width: 100%;
-    }
-    footer{
-        flex-direction: column;
-        height:100%;
-        position : static;
-    }
-    footer div{
-        width: 100%;
-    }
-  .mySlides{
+    height:auto;
+    flex-direction: column;
+}
+.menu{
+    width: 80%;
+    flex-direction: column;
+    height:100%;
+    margin-bottom: 20px;
+}
+.menu li{
+    line-height: 40px;
+    border-bottom: solid 1px black;
+}
+.logo{
+    justify-content: space-around;
+}
+.home-img{
+    margin-top: 20px;
+}
+nav a h2{
+    font-size: 80px;
+}
+.logo img{
+    width: 200px;
+}
+
+.histoire{
+    flex-direction: column;
+}
+.texte-histoire{
+    width: 100%;
+}
+.img-histoire{
+    width: 100%;
+}
+footer{
+    flex-direction: column;
+    height:100%;
+    position : static;
+}
+footer div{
+    width: 100%;
+}
+.mySlides{
     width:100%;
     margin:auto 0;
-  }
-  .img_actu{
+}
+.img_actu{
     width:100%;
-  }
- 
+}
+ .contact{
+    width:80%;
+ }

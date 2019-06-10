@@ -5,7 +5,10 @@ session_start();
   <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style_admin.css">
+        <link rel="stylesheet" href="css/style_admin.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/style_admin_mobile.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>Connexion au BackOffice</title>
 
     </head>
@@ -17,7 +20,7 @@ session_start();
           
       <h2>Mon actualité</h2>
       <?php
-       include "../conn_bdd.php" ;
+       include "../inc/conn_bdd.php" ;
         $reponse = $bdd->query('SELECT ID,titre,article, modified FROM actu');
 
        while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
@@ -54,7 +57,7 @@ session_start();
           <h2>Mon menu</h2>
           
           <?php 
-          $reponse = $bdd->query('SELECT ID,type,description,prix FROM menu');
+          $reponse = $bdd->query('SELECT ID,type,description,prix FROM menu ORDER by type');
 
        while($donnees = $reponse->fetch(PDO::FETCH_ASSOC))
        { 

@@ -5,7 +5,10 @@ session_start();
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style_admin.css">
+        <link rel="stylesheet" href="css/style_admin.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/style_admin_mobile.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>Gestion des articles</title>
 
     </head>
@@ -13,7 +16,7 @@ session_start();
    <a href="logout.php" class="deconnexion">Déconnexion</a><br>
       <h1>Gestion des articles</h1>
       <?php
-     include "../conn_bdd.php" ;
+     include "../inc/conn_bdd.php" ;
    // modification d'un article
    if(!isset($_POST['submit']) AND isset($_GET['id']))
    {
@@ -31,7 +34,7 @@ session_start();
             <textarea name="article" rows=30 cols=100 ><?php echo $donnees["article"];?></textarea><br>
             <?php if ($donnees["img"]!="") {
                 ?>
-            <img src="img/<?= $donnees["img"];?>" width="70%"><br>
+            <img src="../img/<?= $donnees["img"];?>" width="70%"><br>
 
             <?php } ?>
             <label for "fichier">Modifier l'image</label><br>
@@ -75,7 +78,7 @@ session_start();
     if((isset($_POST['submit'])) AND (isset($_GET['id']))){
         if(isset($_FILES["fichier"]["name"]) AND ($_FILES["fichier"]["name"]!="" )){
             $uploadOk = 1;
-            $target_dir = "img/";
+            $target_dir = "../img/";
             $target_file = $target_dir . basename($_FILES["fichier"]["name"]);
             
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -100,6 +103,14 @@ session_start();
                 }
             }
         }
+
+        $reponse = $bdd->prepare('SELECT ID,img FROM actu WHERE ID=:id');
+        $reponse -> execute(array('id' => $_GET['id']));
+
+        if($donnees = $reponse->fetch(PDO::FETCH_ASSOC)){
+            if( isset($donnees["img"]) && $donnees["img"] != "")
+                unlink($target_dir.$donnees["img"]);
+        }
       
         $req = $bdd->prepare('UPDATE actu SET titre=?,article=?,modified=?,img=? WHERE ID=?');
         $titre=$_POST['titre'];
@@ -107,6 +118,7 @@ session_start();
         $modified=date("Y-m-d H:i:s");
         $img=basename( $_FILES["fichier"]["name"]);
         $ID=$_GET['id'];
+        
         if($req->execute(array($titre,$article,$modified,$img,$ID)))
         {    
         ?>

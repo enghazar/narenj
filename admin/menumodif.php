@@ -5,7 +5,10 @@ session_start();
 <html lang="fr">    
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="style_admin.css">
+        <link rel="stylesheet" href="css/style_admin.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/style_admin_mobile.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>Gestion du menu</title>
 
     </head>
@@ -14,7 +17,7 @@ session_start();
 
         <h1>Gestion du menu</h1>
           <?php
-         include "../conn_bdd.php" ;
+         include "../inc/conn_bdd.php" ;
        // modification d'un plat
        if(isset($_GET['id']))
        {

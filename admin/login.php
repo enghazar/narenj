@@ -1,16 +1,19 @@
-
+<?php ob_start(); ?>
 <!DOCTYPE html>
 
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
         <title>BackOffice de mon site</title>
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="css/style_admin.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px)" href="css/style_admin_mobile.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     </head>
     <body>
     
    <?php
-     include "../conn_bdd.php" ;
+     include "../inc/conn_bdd.php" ;
       
       $reponse = $bdd->prepare('SELECT * FROM user WHERE login=? AND password= ?');
       $reponse->execute(array($_POST['login'], $_POST['mdp']));
@@ -20,6 +23,7 @@
          session_start(); 
          $_SESSION['login']=$_POST['login'];
          header('Location:backoffice.php');
+         exit;
      }
      else  {
      ?>
@@ -36,3 +40,4 @@
         
     </body>
 </html>
+<?php ob_end_flush(); ?>
